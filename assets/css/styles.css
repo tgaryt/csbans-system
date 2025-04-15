@@ -1,0 +1,255 @@
+body {
+	font-family: Arial, sans-serif;
+	background-color: #222;
+	color: #ddd;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+
+.container {
+	width: 90%;
+	max-width: 1200px;
+	background-color: #333;
+	padding: 20px;
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+	border-radius: 10px;
+	animation: fadeIn 1s ease-in-out;
+}
+
+.ban-status {
+	margin-bottom: 20px;
+	padding: 10px;
+	border-radius: 4px;
+	color: #fff;
+	font-weight: bold;
+	display: inline-block;
+}
+
+.ban-status.banned {
+	background-color: #e74c3c;
+}
+
+.ban-status.not-banned {
+	background-color: #2ecc71;
+}
+
+h1 {
+	text-align: center;
+	color: #f0f0f0;
+	margin-bottom: 20px;
+	animation: slideDown 1s ease-in-out;
+}
+
+h1 a {
+	color: #f0f0f0;
+	text-decoration: none;
+}
+
+h1 a:hover {
+	color: #3498db;
+	text-decoration: underline;
+}
+
+.search-form {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 20px;
+	animation: fadeIn 1s ease-in-out;
+}
+
+.search-form input[type="text"] {
+	width: 300px;
+	padding: 10px;
+	border: 1px solid #555;
+	border-radius: 4px;
+	background-color: #444;
+	color: #fff;
+}
+
+.search-button {
+	padding: 10px 20px;
+	border: none;
+	background-color: #3498db;
+	color: #fff;
+	border-radius: 4px;
+	cursor: pointer;
+	margin-left: 10px;
+	transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+	background-color: #2980b9;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-bottom: 20px;
+	animation: fadeIn 1s ease-in-out;
+	color: #ddd;
+	font-size: 12px;
+	white-space: nowrap;
+}
+
+table, th, td {
+	border: 1px solid #555;
+}
+
+table th, table td {
+	padding: 12px;
+	text-align: left;
+}
+
+table th {
+	background-color: #444;
+}
+
+table tr:nth-child(even) {
+	background-color: #3a3a3a;
+}
+
+.pagination {
+	text-align: center;
+	margin-top: 20px;
+}
+
+.pagination-info {
+	margin-bottom: 10px;
+	font-size: 16px;
+}
+
+.pagination a {
+	color: #3498db;
+	text-decoration: none;
+	margin: 0 5px;
+	padding: 8px 16px;
+	border: 1px solid #555;
+	border-radius: 4px;
+	transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.pagination a:hover {
+	background-color: #2980b9;
+	color: #fff;
+}
+
+.pagination .active {
+	background-color: #3498db;
+	color: #fff;
+	border-color: #3498db;
+}
+
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 1000;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgb(0, 0, 0);
+	background-color: rgba(0, 0, 0, 0.4);
+	padding-top: 60px;
+}
+
+.modal-content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #333;
+	margin: auto;
+	padding: 20px;
+	border: 1px solid #888;
+	width: 80%;
+	max-width: 600px;
+	border-radius: 10px;
+	color: #ddd;
+}
+
+.modal-content table {
+	width: 100%;
+}
+
+.modal-content th, .modal-content td {
+	width: auto;
+}
+
+.close-button, .share-button {
+	color: white;
+	border: none;
+	padding: 10px 20px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 16px;
+	display: inline-block;
+	cursor: pointer;
+	border-radius: 4px;
+	transition: background-color 0.3s ease;
+}
+
+.close-button {
+	background-color: #dc3545;
+}
+
+.close-button:hover {
+	background-color: #c82333;
+}
+
+.share-button {
+	background-color: #007bff;
+}
+
+.share-button:hover {
+	background-color: #0056b3;
+}
+
+.view-button {
+	background-color: #007bff;
+	color: white;
+	border: none;
+	padding: 5px 10px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 10px;
+	margin: 4px 2px;
+	cursor: pointer;
+	border-radius: 4px;
+	transition: background-color 0.3s ease;
+}
+
+.view-button:hover {
+	background-color: #0056b3;
+}
+
+.indicator {
+	color: #2ecc71;
+}
+
+.flag img {
+	transform: translateY(3px);
+}
+
+a {
+	color: #0088CC;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+@keyframes fadeIn {
+	from { opacity: 0; }
+	to { opacity: 1; }
+}
+
+@keyframes slideDown {
+	from { transform: translateY(-50px); }
+	to { transform: translateY(0); }
+}
